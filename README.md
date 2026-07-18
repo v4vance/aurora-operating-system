@@ -62,6 +62,14 @@ in a written artifact, not only in a conversation.
   it from coordination, and explains why it matters.
 - `principles/domain-separation.md` — defines global, domain, and project
   knowledge, and the rules for keeping them separated.
+- `roles/builder-role-specification.md` — defines the Builder's permanent
+  authority, boundaries, repository discipline, validation duties, and
+  reporting contract.
+- `protocols/specification-lifecycle.md` — defines how proposed work moves
+  through drafting, Producer approval, publication, assignment,
+  implementation, review, and acceptance.
+- `protocols/capability-verification.md` — defines how execution-environment
+  capabilities are tested, recorded, and routed around when unavailable.
 
 ## Status
 
