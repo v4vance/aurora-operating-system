@@ -122,53 +122,61 @@ Example:
 
 ```text
 builder/completions/phase_00/
-├── 2026-07-18_p0-wo01_completion.md
-├── 2026-07-18_p0-wo02_completion.md
-├── 2026-07-19_p0-wo03_completion.md
-└── 2026-07-20_pr-12-merge_completion.md
+├── p0-wo01_completion.md
+├── p0-wo02_completion.md
+├── p0-wo03_completion.md
+└── pr-12-merge_completion.md
 
 ```
 
 ## Filename Convention
 
+Completion-record filenames identify structural progression. Temporal information belongs in record metadata unless time is itself part of the assignment's canonical identity.
+
 Use a stable, sortable filename that communicates:
 
-1. completion date;
-2. canonical assignment identity, when available;
-3. completion-record purpose.
+1. canonical assignment identity or progression position;
+2. completion-record purpose, when it adds clarity beyond the identifier.
 
 Preferred format:
 
 ```text
-YYYY-MM-DD_<assignment-id-or-short-name>_completion.md
+<progression-or-assignment-id>_<short-name-or-purpose>_completion.md
 
 ```
 
 Examples:
 
 ```text
-2026-07-18_p0-wo01_completion.md
-2026-07-18_builder-readme-publication_completion.md
-2026-07-19_pr-10-merge_completion.md
+p0-wo01_completion.md
+p0-wo02_completion.md
+p0-wo03_completion.md
+pr-12-merge_completion.md
+p00-001_builder-readme-publication_completion.md
+p00-002_pr-10-merge_completion.md
 
 ```
 
-When several records share the same date and no canonical assignment identifiers exist, a sequence number may be added:
+When the canonical identifier already communicates the assignment's purpose, unnecessary repetition may be omitted.
+
+When no canonical work-order, pull-request, issue, release, migration, or other progression identifier exists, the Producer may approve a sortable sequence within the applicable lifecycle folder:
 
 ```text
-YYYY-MM-DD_NNN_<short-name>_completion.md
+<context-or-progression>_<NNN>_<short-name>_completion.md
 
 ```
 
 Example:
 
 ```text
-2026-07-18_001_builder-readme-publication_completion.md
-2026-07-18_002_pr-10-merge_completion.md
+p00_001_builder-readme-publication_completion.md
+p00_002_completion-record-specification-publication_completion.md
 
 ```
 
-Canonical work-order, pull-request, issue, release, or project identifiers are preferable to arbitrary sequence numbers when they are available.
+A Producer-approved fallback sequence is subordinate to canonical identifiers; use it only when no meaningful canonical identifier is available. Canonical work-order, pull-request, issue, release, or project identifiers remain preferable to arbitrary sequence numbers.
+
+Calendar dates should not appear as the default filename prefix. A date belongs in a filename only when time itself is an essential part of the assignment's canonical identity, and only when the Producer or Architect explicitly authorizes it. Chronology is preserved inside the record body through fields such as `Date completed`, `Historical assignment date`, and `Reconstruction date`.
 
 ## Builder Authorship
 
@@ -247,9 +255,9 @@ Each separately authorized Builder action should still receive its own record.
 For example:
 
 ```text
-2026-07-18_p0-wo01-implementation_completion.md
-2026-07-18_p0-wo01-closeout_completion.md
-2026-07-19_pr-10-merge_completion.md
+p0-wo01-implementation_completion.md
+p0-wo01-closeout_completion.md
+pr-10-merge_completion.md
 
 ```
 
