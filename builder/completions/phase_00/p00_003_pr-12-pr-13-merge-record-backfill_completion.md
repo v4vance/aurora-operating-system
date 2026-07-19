@@ -64,11 +64,11 @@ No existing file was modified.
 
 ## Commit
 
-The first publication commit's SHA is not yet known at the time this record was first written, because this record is committed in the same commit as the two files it documents (commit subject: "Publish backfilled Builder completion records for PR #12 and PR #13 merges"). Per this assignment's explicit instruction, a follow-up correction commit on this same branch updates this section with the actual commit SHA and PR number before the assignment is considered complete. That correction commit's SHA and subject are also reported in the completion report that follows this assignment, since it necessarily lands after this file is written.
+First publication commit: `07148d707b4b396aa771dd3230cb6b34cad42185` — "Publish backfilled Builder completion records for PR #12 and PR #13 merges". This record was committed in the same commit as the two merge records it documents.
 
 ## Pull Request
 
-Not yet opened at the time this record was first written. The actual PR number and state are reported in the completion report that follows this assignment, and are added to this section by the follow-up evidence-correction commit described above.
+`#14` — open against `main` and unmerged at the time of this correction.
 
 ## Stopping Condition
 
