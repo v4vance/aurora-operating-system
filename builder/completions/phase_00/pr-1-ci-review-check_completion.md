@@ -8,10 +8,13 @@
 - Pattern: investigate
 - Status: Complete
 - Repository or environment: v4vance/aurora-operating-system
-- Completion-record path: builder/completions/phase_00/2026-07-18_pr-1-ci-review-check_completion.md
+- Completion-record path: builder/completions/phase_00/pr-1-ci-review-check_completion.md
 - Governing artifact or specification: None pre-existing; instructions were delivered directly by a GitHub PR-activity subscription notice.
 - Builder model or environment: Claude Code
-- Date completed: 2026-07-18
+- Record type: Retroactive reconstruction
+- Historical assignment date: 2026-07-18 (America/Denver, the project operating timezone — verified from PR #1 `created_at` timestamp `2026-07-18T18:47:13Z` UTC, equivalent to `12:47:13` America/Denver; the check occurred between PR #1 creation and its merge, both on the same Denver calendar date)
+- Reconstruction date: 2026-07-18
+- Evidence sources: `pull_request_read` on PR #1 (`created_at`, `merged_at`); contemporaneous Builder completion report from this same conversation
 
 ## Reconstruction Notice
 
@@ -82,7 +85,7 @@ None material — no CI workflows were configured on the repository at this time
 - Inferred: not applicable.
 - Unknown: not applicable.
 - Conclusion: nothing actionable; PR #1 was cleanly mergeable with no CI or review activity.
-- Recommended next authority: continue monitoring per the existing subscription until the Producer authorizes the next action (subsequently authorized separately as the merge assignment recorded in `2026-07-18_pr-1-merge_completion.md`).
+- Recommended next authority: continue monitoring per the existing subscription until the Producer authorizes the next action (subsequently authorized separately as the merge assignment recorded in `pr-1-merge_completion.md`).
 
 ## Builder Attestation
 

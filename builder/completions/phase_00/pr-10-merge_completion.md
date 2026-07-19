@@ -8,10 +8,13 @@
 - Pattern: merge
 - Status: Complete
 - Repository or environment: v4vance/aurora-operating-system
-- Completion-record path: builder/completions/phase_00/2026-07-18_pr-10-merge_completion.md
+- Completion-record path: builder/completions/phase_00/pr-10-merge_completion.md
 - Governing artifact or specification: `roles/builder-role-specification.md`; `protocols/builder-completion-record-specification.md`; `builder/README.md`
 - Builder model or environment: Claude Code
-- Date completed: 2026-07-18
+- Record type: Retroactive reconstruction
+- Historical assignment date: 2026-07-18 (America/Denver, the project operating timezone — verified from merge commit timestamp `2026-07-18T16:40:28-06:00`; already expressed in America/Denver)
+- Reconstruction date: 2026-07-18
+- Evidence sources: `git log` on merge commit `164a3b5c252b539e65d3397a245c0f015bfb1e8f`; contemporaneous Builder completion report from this same conversation
 
 ## Reconstruction Notice
 

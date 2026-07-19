@@ -8,10 +8,13 @@
 - Pattern: publish
 - Status: Complete
 - Repository or environment: v4vance/aurora-operating-system
-- Completion-record path: builder/completions/phase_00/2026-07-18_builder-completion-record-specification-publication_completion.md
+- Completion-record path: builder/completions/phase_00/pr-9-publication_completion.md
 - Governing artifact or specification: `roles/builder-role-specification.md`
 - Builder model or environment: Claude Code
-- Date completed: 2026-07-18
+- Record type: Retroactive reconstruction
+- Historical assignment date: 2026-07-18 (America/Denver, the project operating timezone — verified from commit timestamp `2026-07-18T21:46:41Z` UTC; equivalent to `15:46:41` America/Denver)
+- Reconstruction date: 2026-07-18
+- Evidence sources: `git log` on commit `7b5e89fa39e58674739141b4822ea835f9a23c87`; contemporaneous Builder completion report from this same conversation
 
 ## Reconstruction Notice
 
@@ -62,7 +65,7 @@ This record is a retroactive reconstruction, created because the Builder complet
 ## Final State
 
 - Branch `builder/publish-completion-record-specification` pushed to `origin`.
-- PR #9 open, `mergeable_state: clean`, not merged (merge authorized and performed in a later, separate assignment — record `2026-07-18_pr-9-merge_completion.md`).
+- PR #9 open, `mergeable_state: clean`, not merged (merge authorized and performed in a later, separate assignment — record `pr-9-merge_completion.md`).
 - Working tree clean.
 
 ## Limitations

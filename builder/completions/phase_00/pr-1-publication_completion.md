@@ -8,10 +8,13 @@
 - Pattern: publish
 - Status: Complete
 - Repository or environment: v4vance/aurora-operating-system
-- Completion-record path: builder/completions/phase_00/2026-07-18_initial-foundations-publication_completion.md
+- Completion-record path: builder/completions/phase_00/pr-1-publication_completion.md
 - Governing artifact or specification: None pre-existing. `roles/builder-role-specification.md` did not yet exist; the assignment's role model, objective, and content requirements were stated directly in the Producer's prompt.
 - Builder model or environment: Claude Code
-- Date completed: 2026-07-18
+- Record type: Retroactive reconstruction
+- Historical assignment date: 2026-07-18 (America/Denver, the project operating timezone — verified from commit timestamp `2026-07-18T17:25:54Z` UTC; equivalent to `11:25:54` America/Denver)
+- Reconstruction date: 2026-07-18
+- Evidence sources: `git log` on commit `6302d380c48965d7247a9057272a54cdb6718f67`; contemporaneous Builder completion report from this same conversation
 
 ## Reconstruction Notice
 
