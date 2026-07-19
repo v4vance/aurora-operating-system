@@ -12,8 +12,8 @@
 - Governing artifact or specification: `roles/architect-role-specification.md`; `roles/builder-role-specification.md`; `protocols/builder-completion-record-specification.md`; `builder/README.md`
 - Builder model or environment: Claude Code
 - Record type: Retroactive reconstruction
-- Historical assignment date: 2026-07-19 (verified — merge commit author/committer date `2026-07-18T19:36:19-06:00`, equivalent to `2026-07-19T01:36:19Z`)
-- Reconstruction date: 2026-07-19
+- Historical assignment date: 2026-07-18 (America/Denver, the project operating timezone — verified from merge commit timestamp `2026-07-18T19:36:19-06:00`; the UTC equivalent `2026-07-19T01:36:19Z` is preserved as supporting evidence only and is not the operative date)
+- Reconstruction date: 2026-07-18
 - Evidence sources: contemporaneous Builder completion report from this same conversation (highest-confidence source per the evidence precedence in `protocols/builder-completion-record-specification.md`); `pull_request_read` on PR #13 and PR #11; `git log` and `git ls-tree` on `origin/main`
 
 ## Reconstruction Notice

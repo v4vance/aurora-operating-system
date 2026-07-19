@@ -11,7 +11,7 @@
 - Completion-record path: builder/completions/phase_00/p00_003_pr-12-pr-13-merge-record-backfill_completion.md
 - Governing artifact or specification: `roles/architect-role-specification.md`; `roles/builder-role-specification.md`; `protocols/builder-completion-record-specification.md`; `builder/README.md`. `roles/producer-role-specification.md` does not exist on `main`; its absence is a known, non-blocking finding, not addressed by this assignment.
 - Builder model or environment: Claude Code
-- Date completed: 2026-07-19
+- Date completed: 2026-07-18 (America/Denver, the project operating timezone; commit timestamps for this assignment are `2026-07-19T01:54:32Z` and `2026-07-19T01:55:09Z` UTC, both `2026-07-18` in America/Denver)
 
 ## Purpose of This Assignment
 
