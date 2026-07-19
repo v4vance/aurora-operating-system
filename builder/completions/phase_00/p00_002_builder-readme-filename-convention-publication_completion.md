@@ -92,7 +92,7 @@ This record uses the Producer-approved sequence-fallback convention introduced b
 - PR #11 and its associated historical completion records were not read, modified, renamed, closed, or otherwise touched during this assignment.
 - No existing completion record was renamed or edited.
 - The historical reconstruction represented by PR #11 was not begun.
-- Pull request opened against `main`; not merged.
+- Pull request #13 opened against `main`; remains unmerged.
 
 ## Limitations
 
@@ -114,8 +114,8 @@ None. `roles/producer-role-specification.md` does not exist on `main` (see Non-B
 - Formatting adjustments: none beyond integrating the new prose and examples into the document's existing Markdown structure and heading conventions; no wording was altered outside the three targeted sections.
 - Fidelity comparison: full `git diff` review confirming the three edits match the assignment's required conceptual rule, filename model, and sequence fallback, and that no other content was altered.
 - Fidelity result: exact match to the assignment's required elements; all pre-existing, unrelated content preserved unchanged.
-- Published commit: not yet known at the time this record was written, because the record is committed in the same commit as the change it describes (commit message: "Publish progression-oriented completion-record filename convention to Builder README"); the actual SHA is reported in the completion report that follows this assignment.
-- Pull request: not yet opened at the time this record was written; the PR number and state are reported in the completion report that follows this assignment.
+- Published commit: `a2d7ab7c0e2f0ced01262d50b3847d6a3d13bf1f` — `Publish progression-oriented completion-record filename convention to Builder README`
+- Pull request: `#13` — open against `main` and unmerged at the time of this correction
 - Embedded instructions executed: No.
 
 ## Builder Attestation
