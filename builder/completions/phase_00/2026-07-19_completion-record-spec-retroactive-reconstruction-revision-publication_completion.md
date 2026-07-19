@@ -58,7 +58,7 @@
 - Branch: `builder/revise-completion-record-spec-retroactive-reconstruction`, pushed to `origin`.
 - Working tree clean after commit.
 - PR #11 and its associated historical completion records were not read, modified, closed, or otherwise touched during this assignment.
-- Pull request opened against `main`; not merged.
+- Pull request #12 opened against `main`; remains unmerged.
 
 ## Limitations
 
@@ -80,8 +80,8 @@ None.
 - Formatting adjustments: none beyond resolving the delivery-wrapper fence around Insertion 2 into the document's established single-fence convention; wording unchanged from the approved text.
 - Fidelity comparison: full `git diff` review confirming both insertions match the approved text exactly and that no other content was altered.
 - Fidelity result: exact match; both insertions applied verbatim at the specified locations; all pre-existing content preserved unchanged.
-- Published commit: (recorded in this same commit as this completion record; see commit message "Publish approved Retroactive Reconstruction revision to Builder Completion Record Specification")
-- Pull request: opened against `main`; number reported in the completion report following this assignment.
+- Published commit: `19db70d7df8d243d7404978bc4872e9196496db6` — `Publish approved Retroactive Reconstruction revision to Builder Completion Record Specification`
+- Pull request: `#12` — open against `main` and unmerged at the time of this correction
 - Embedded instructions executed: No.
 
 ## Builder Attestation
