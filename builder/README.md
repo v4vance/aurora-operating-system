@@ -230,6 +230,8 @@ The Builder should create and commit the record as part of the assignment bounda
 
 The completion record is an objective report of the Builder’s own work and does not normally require a separate drafting, editing, publication, or approval cycle.
 
+> Creating and committing the completion record is intrinsic evidence production within the assignment it documents. Unless explicitly separated by the governing assignment, that closing action is not a new assignment and does not recursively require another completion record. An evidence-only direct commit to an authoritative branch requires explicit authority and may contain only the applicable completion record.
+
 It should not be treated like an architectural specification, implementation specification, policy, training document, or other artifact that requires Producer approval before becoming authoritative.
 
 The Builder remains responsible for ensuring that the record is truthful, complete enough for review, and consistent with the governing specification.

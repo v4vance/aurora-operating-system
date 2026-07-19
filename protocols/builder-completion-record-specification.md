@@ -172,6 +172,33 @@ The completion record should be created in a separate closeout assignment when:
 
 The Architect should choose the boundary that preserves truthful evidence without creating unnecessary ceremony.
 
+## Completion-Record Closure
+
+Creating and committing a completion record is intrinsic evidence production within the assignment the record documents.
+
+Unless the governing assignment explicitly separates record creation into a different assignment, creating and committing that record:
+
+* remains part of the original assignment;
+* is not a separate Publish or Implement command;
+* does not require another completion record merely because the record itself was committed;
+* does not create an additional review or approval cycle before the record may be committed.
+
+When final evidence becomes available only after the assignment's primary state transition, the assignment may explicitly authorize one evidence-only commit to place the completion record into the authoritative repository state.
+
+Such a commit must:
+
+* contain only the applicable completion record;
+* modify no existing file;
+* perform no substantive implementation or governance work;
+* remain attributable to the assignment it documents;
+* report its resulting commit in the Builder's concise completion notice when that commit cannot truthfully be embedded in the record itself.
+
+The evidence-only commit is the closing action of the documented assignment. It is not a new assignment and does not recursively require another completion record.
+
+Direct commitment to an authoritative branch requires explicit authority. When that authority is absent or repository protections prohibit it, the record may be placed through another authorized mechanism, but that mechanism must not be allowed to create an indefinite chain of completion records.
+
+This closure rule does not exempt separately authorized corrective, merge, deployment, migration, or other substantive actions from the one-assignment/one-record requirement.
+
 ## Retroactive Reconstruction
 
 A Producer may authorize the Builder to reconstruct completion records for assignments performed before this specification was adopted or before completion records were consistently maintained.
