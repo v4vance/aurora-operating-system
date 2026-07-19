@@ -172,6 +172,61 @@ The completion record should be created in a separate closeout assignment when:
 
 The Architect should choose the boundary that preserves truthful evidence without creating unnecessary ceremony.
 
+## Retroactive Reconstruction
+
+A Producer may authorize the Builder to reconstruct completion records for assignments performed before this specification was adopted or before completion records were consistently maintained.
+
+The objective of retroactive reconstruction is repository completeness, not conversation completeness.
+
+The absence of an original Builder conversation or execution transcript does not, by itself, justify omitting an assignment when reliable repository evidence demonstrates that the assignment occurred.
+
+For each material claim, the Builder should use the highest-confidence evidence reasonably available within the authorized evidence boundary.
+
+The default evidence precedence is:
+
+1. original Builder execution transcript or contemporaneous Builder completion response;
+2. repository commits, branches, and tags;
+3. pull-request records, review history, and merge evidence;
+4. contemporaneous validation or closeout artifacts;
+5. directly observable repository state;
+6. clearly identified Builder inference.
+
+This precedence applies per claim rather than per record. A reconstructed record may therefore use different evidence classes for different facts.
+
+A lower-ranked source may supplement a higher-ranked source when it adds non-conflicting detail. It must not silently override stronger evidence.
+
+When evidence sources conflict, the Builder must:
+
+* identify the conflict;
+* prefer the most direct and authoritative evidence for the specific claim;
+* preserve material uncertainty;
+* record the conflict as a limitation or finding when it affects interpretation.
+
+The Builder must not invent:
+
+* commands that cannot be verified;
+* validation that cannot be demonstrated;
+* unrecorded intent;
+* conversational instructions that are unavailable;
+* exact starting or final states unsupported by evidence;
+* authorship or execution details not established by the available record.
+
+Unknown information should be recorded as unknown or unavailable. It should not cause the entire assignment to be omitted when the assignment and its material outcome can otherwise be reconstructed honestly.
+
+A retroactively reconstructed completion record should identify:
+
+* that the record was reconstructed after the assignment;
+* the historical assignment or change represented;
+* the reconstruction date;
+* the evidence sources inspected;
+* which material claims were directly verified;
+* which claims were inferred;
+* unresolved limitations or conflicts.
+
+Retroactive reconstruction does not convert repository history into proof of unrecorded execution details. It creates the most accurate durable record supported by the available evidence.
+
+The Builder should include every assignment within the authorized reconstruction scope that can be established from sufficient repository evidence, even when the original Builder conversation is unavailable.
+
 ## Record Status
 
 Every completion record must identify one status:
@@ -237,6 +292,18 @@ Local shell with filesystem tools
 This field is for provenance and capability interpretation.
 
 It does not change the authority of the record.
+
+For a retroactively reconstructed record, the Builder should additionally include:
+
+```markdown
+- Record type: Retroactive reconstruction
+- Historical assignment date:
+- Reconstruction date:
+- Evidence sources:
+
+```
+
+The historical assignment date and reconstruction date must remain distinct. When the historical assignment date cannot be determined precisely, the Builder should record the narrowest supported date or range and identify the limitation.
 
 ## Common Evidence Sections
 
