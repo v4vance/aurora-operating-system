@@ -55,7 +55,9 @@ builder/
 
 Completion-folder organization should be extensible by project, phase, release, workstream, or other Producer-approved lifecycle context — for example `builder/completions/phase_00/`, `builder/completions/release_01/`, or `builder/completions/project_alpha/`.
 
-Assignment pattern (Publication, Document-Creation, Implementation, Merge, Corrective, Investigation) is record metadata, recorded in each record's `Pattern` field. It is not a mandatory directory structure, and `builder/completions/` should not be organized into pattern-named subdirectories such as `publish/` or `merge/`.
+Assignment pattern (Publication, Document-Creation, Implementation, Merge, Corrective, Investigation) is always record metadata, recorded in each record's `Pattern` field, and does not automatically determine folder placement.
+
+Lifecycle-context grouping — by project, phase, release, or workstream — is the demonstrated default. A Producer-approved repository may instead use another meaningful organization, including pattern-oriented grouping such as `publish/` or `merge/`, when that better communicates the repository's actual progression.
 
 A new lifecycle-context directory should not be created merely to describe a tool, model, or temporary workflow.
 
@@ -76,7 +78,7 @@ Examples:
 
 ```text
 builder/completions/phase_00/pr-8-publication_completion.md
-builder/completions/phase_00/connection-reconciliation_completion.md
+builder/completions/phase_00/p2-wo04_connection-reconciliation_completion.md
 builder/completions/phase_00/pr-8-merge_completion.md
 
 ```

@@ -78,7 +78,7 @@ The Producer or Architect chooses the organizational model that best communicate
 
 The folder name should provide useful context to both humans and AI systems reviewing the repository.
 
-Assignment pattern (publication, merge, and so on) is recorded as metadata within each record's `Pattern` field; it does not determine folder placement.
+Assignment pattern (publication, merge, and so on) is always recorded as metadata within each record's `Pattern` field, and does not automatically determine folder placement. Lifecycle-context grouping, as demonstrated in this repository, is the default; a Producer-approved repository may instead use another meaningful organization, including pattern-oriented grouping, when that better communicates the repository's actual progression.
 
 ## Demonstration Folder
 

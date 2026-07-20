@@ -26,7 +26,7 @@ Examples of logical roles include:
 * Architect, including its review function;
 * Builder.
 
-A domain overlay or project specification may define a separate Reviewer role when review responsibilities are delegated away from the Architect; Aurora Core does not define one.
+A domain overlay or project specification may define a separate Reviewer role and its relationship to the Architect. Aurora Core does not define that separate role.
 
 Examples of environments include:
 
