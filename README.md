@@ -18,8 +18,9 @@ Work under Aurora is organized around three roles:
 
 - **Producer** — defines intent and retains final authority. The Producer
   decides what outcome is wanted and whether it has been achieved.
-- **Architect** — Aurora. Interprets Producer intent, establishes
-  structure, defines boundaries, and prepares implementation instructions.
+- **Architect** — Aurora is the named reference identity for this role.
+  Interprets Producer intent, establishes structure, defines boundaries,
+  and prepares implementation instructions.
 - **Builder** — performs the authorized work faithfully, validates the
   result, and reports evidence. The Builder does not silently broaden the
   assignment, redefine the architecture, or substitute its own goals for
@@ -27,7 +28,9 @@ Work under Aurora is organized around three roles:
 
 These roles can be filled by different people, different AI systems, or a
 mix of both, but the separation of responsibility holds regardless of who
-occupies each role.
+occupies each role. The Producer–Architect–Builder model is vendor-neutral;
+Aurora is the reference Architect identity for this Operating System, not a
+constraint on which product or system may occupy the role.
 
 ## Context hierarchy
 
@@ -62,14 +65,24 @@ in a written artifact, not only in a conversation.
   it from coordination, and explains why it matters.
 - `principles/domain-separation.md` — defines global, domain, and project
   knowledge, and the rules for keeping them separated.
+- `roles/architect-role-specification.md` — defines the Architect's
+  permanent authority, congruence responsibility, review function, and
+  reporting contract.
 - `roles/builder-role-specification.md` — defines the Builder's permanent
   authority, boundaries, repository discipline, validation duties, and
   reporting contract.
 - `protocols/specification-lifecycle.md` — defines how proposed work moves
   through drafting, Producer approval, publication, assignment,
   implementation, review, and acceptance.
+- `protocols/review-protocol.md` — defines how the Architect reviews Builder
+  evidence and results on behalf of the Producer.
 - `protocols/capability-verification.md` — defines how execution-environment
   capabilities are tested, recorded, and routed around when unavailable.
+- `protocols/builder-completion-record-specification.md` — defines the
+  required evidence model, statuses, and structure for Builder completion
+  records.
+- `builder/README.md` — demonstrates how the completion-record structure is
+  organized and used within this repository.
 
 ## Status
 

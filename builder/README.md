@@ -78,6 +78,8 @@ The Producer or Architect chooses the organizational model that best communicate
 
 The folder name should provide useful context to both humans and AI systems reviewing the repository.
 
+Assignment pattern (publication, merge, and so on) is always recorded as metadata within each record's `Pattern` field, and does not automatically determine folder placement. Lifecycle-context grouping, as demonstrated in this repository, is the default; a Producer-approved repository may instead use another meaningful organization, including pattern-oriented grouping, when that better communicates the repository's actual progression.
+
 ## Demonstration Folder
 
 This repository uses:
@@ -242,9 +244,9 @@ If a completion record contains a material factual error, a later authorized cor
 
 The governing assignment should authorize creation of the applicable completion record.
 
-When practical, the record should be committed with the work it describes.
+By default, record creation is intrinsic to the assignment it documents, and the record should be committed with the work it describes.
 
-A separate closeout assignment may be used when:
+A separate closeout assignment is a bounded exception to that default, used only when:
 
 * the implementation file set must remain frozen;
 * final commit, pull-request, merge, deployment, or remote-state evidence is not yet available;

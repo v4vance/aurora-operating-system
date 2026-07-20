@@ -53,7 +53,7 @@ The Architect:
 
 * identifies the assignment being reviewed;
 * reads the governing authority;
-* examines the Builder report;
+* examines the Builder completion record;
 * verifies material claims when evidence and tools are available;
 * identifies discrepancies, limitations, blockers, and findings;
 * classifies the review outcome;
@@ -79,7 +79,7 @@ The operating relationship remains:
 
 ## Review Activation
 
-A review begins when the Producer supplies or identifies a Builder completion report, pull request, commit, repository state, artifact, or other completed result for evaluation.
+A review begins when the Producer supplies or identifies a Builder completion record, pull request, commit, repository state, artifact, or other completed result for evaluation.
 
 The Architect should identify:
 
@@ -102,7 +102,7 @@ The Architect should obtain, as applicable:
 * the Architect Role Specification;
 * the approved artifact or implementation specification;
 * named governing artifacts;
-* the Builder completion report;
+* the Builder completion record;
 * repository or working-environment evidence;
 * changed-file lists;
 * diffs or patches;
@@ -248,7 +248,7 @@ The Architect should independently verify material claims when:
 * the result depends on exact changed-file scope;
 * the result depends on a merge, push, deployment, or other remote action.
 
-The Architect must not imply independent verification when only the Builder’s report was reviewed.
+The Architect must not imply independent verification when only the Builder’s completion record was reviewed.
 
 ## Validation Review
 
@@ -331,7 +331,7 @@ Examples include:
 * unauthorized files or systems changed;
 * required validation failed;
 * final state cannot be established;
-* Builder report materially contradicts available evidence;
+* Builder completion record materially contradicts available evidence;
 * destructive or irreversible work occurred without authority.
 
 ### Correctable Discrepancy
@@ -515,7 +515,7 @@ A review report should contain, as applicable:
 
 The report should clearly separate:
 
-* Builder report;
+* Builder completion record;
 * verified evidence;
 * Architect interpretation;
 * Architect recommendation;
@@ -617,7 +617,7 @@ A corrective assignment should:
 * identify required validation;
 * preserve unaffected accepted work;
 * define the stopping condition;
-* require an updated completion report.
+* require an updated completion record.
 
 Correction does not reopen the entire assignment unless the discrepancy affects the entire result.
 
@@ -667,7 +667,7 @@ Within the review itself:
 2. approved governing artifacts;
 3. the approved assignment artifact or specification;
 4. the Builder Role Specification;
-5. the Builder completion report;
+5. the Builder completion record;
 6. repository and external evidence;
 7. Architect assumptions.
 

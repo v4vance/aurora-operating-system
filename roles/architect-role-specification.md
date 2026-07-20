@@ -141,7 +141,7 @@ This may include:
 
 * approved repository artifacts;
 * current specifications;
-* Builder reports;
+* Builder completion records;
 * implementation evidence;
 * prior Producer decisions;
 * current repository or project state;
