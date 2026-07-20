@@ -23,9 +23,10 @@ A logical role is not the same thing as the product or environment hosting it.
 Examples of logical roles include:
 
 * Producer;
-* Architect;
-* Builder;
-* Reviewer.
+* Architect, including its review function;
+* Builder.
+
+A domain overlay or project specification may define a separate Reviewer role when review responsibilities are delegated away from the Architect; Aurora Core does not define one.
 
 Examples of environments include:
 

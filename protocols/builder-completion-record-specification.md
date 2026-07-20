@@ -14,9 +14,11 @@ The completion record separates detailed execution evidence from the Producer-fa
 
 ## Core Model
 
-Every completed or blocked Builder assignment should produce one durable completion record.
+A durable completion record is the default outcome for every completed, blocked, partially completed, or superseded Builder assignment.
 
-The record belongs in the target repository whenever:
+The Producer may explicitly waive the record when repository or assignment constraints make a durable record inappropriate.
+
+Absent such a waiver, the record belongs in the target repository whenever:
 
 * the repository is writable;
 * the assignment changes or evaluates repository-controlled work;
@@ -51,40 +53,31 @@ builder/
 
 ```
 
-Completion records should be organized by assignment pattern:
+Completion-folder organization should be extensible by project, phase, release, workstream, or other Producer-approved lifecycle context — for example `builder/completions/phase_00/`, `builder/completions/release_01/`, or `builder/completions/project_alpha/`.
 
-```text
-builder/completions/publish/
-builder/completions/implement/
-builder/completions/merge/
-builder/completions/correct/
-builder/completions/investigate/
+Assignment pattern (Publication, Document-Creation, Implementation, Merge, Corrective, Investigation) is record metadata, recorded in each record's `Pattern` field. It is not a mandatory directory structure, and `builder/completions/` should not be organized into pattern-named subdirectories such as `publish/` or `merge/`.
 
-```
-
-Additional pattern directories may be created only when a recurring distinction materially changes the required evidence.
-
-A new directory should not be created merely to describe a project, domain, tool, model, or temporary workflow.
+A new lifecycle-context directory should not be created merely to describe a tool, model, or temporary workflow.
 
 ## Completion Record Identity
 
 Each Builder assignment should create one completion record.
 
-The filename should be stable, descriptive, and sortable.
+Completion-record filenames identify structural progression. Temporal information belongs in record metadata (`Date completed`, `Historical assignment date`, `Reconstruction date`) unless time is itself part of the assignment's canonical identity.
 
 Recommended format:
 
 ```text
-YYYY-MM-DD_<assignment-id-or-short-name>_completion.md
+<progression-or-assignment-id>_<short-name-or-purpose>_completion.md
 
 ```
 
 Examples:
 
 ```text
-builder/completions/publish/2026-07-18_review-protocol_completion.md
-builder/completions/implement/2026-07-22_connection-reconciliation_completion.md
-builder/completions/merge/2026-07-18_pr-8_completion.md
+builder/completions/phase_00/pr-8-publication_completion.md
+builder/completions/phase_00/connection-reconciliation_completion.md
+builder/completions/phase_00/pr-8-merge_completion.md
 
 ```
 
@@ -93,10 +86,12 @@ When the governing assignment has a canonical identifier, that identifier should
 Examples:
 
 ```text
-2026-07-22_p2-wo05_completion.md
-2026-07-18_pr-8_completion.md
+p2-wo05_completion.md
+pr-8-merge_completion.md
 
 ```
+
+When no canonical identifier exists, a Producer-approved sortable sequence may be used within the applicable lifecycle folder, subordinate to canonical identifiers when they are available; see `builder/README.md` for the fallback pattern.
 
 The Builder must not overwrite an unrelated prior completion record.
 
@@ -156,14 +151,14 @@ A governing assignment may identify:
 
 When those details are not specified, the Builder should apply this specification proportionately.
 
-The completion record normally belongs in the same branch and pull request as the completed work when:
+By default, record creation is intrinsic to the assignment it documents (see Completion-Record Closure), and the record belongs in the same branch and pull request as the completed work, when:
 
 * the assignment explicitly authorizes it;
 * the record describes that exact branch state;
 * including the record does not violate an exact changed-file constraint;
 * the record is part of the repository’s normal completion process.
 
-The completion record should be created in a separate closeout assignment when:
+A separate closeout assignment is a bounded exception to that default, used only when:
 
 * the implementation assignment authorizes an exact file set that excludes the record;
 * the implementation must remain frozen after accepted validation;
@@ -319,6 +314,8 @@ Local shell with filesystem tools
 This field is for provenance and capability interpretation.
 
 It does not change the authority of the record.
+
+`Active command` identifies the authority-bearing Builder command governing the assignment: Publish or Implement (see `roles/builder-role-specification.md`). `Pattern` identifies which kind of completion-record evidence this record documents — Publication, Document-Creation, Implementation, Merge, Corrective, or Investigation. A pattern does not independently grant authority; merge, correction, investigation, and document creation are performed under Publish or Implement authority, most commonly Implement, not as separate commands.
 
 For a retroactively reconstructed record, the Builder should additionally include:
 
@@ -694,7 +691,7 @@ The Architect should:
 7. recommend an outcome under the Review Protocol;
 8. identify the next authorized action.
 
-The Architect should not require the Producer to restate the technical completion report when the durable record is available.
+The Architect should not require the Producer to restate the technical completion record when it is available.
 
 A completion notice does not imply Producer acceptance.
 

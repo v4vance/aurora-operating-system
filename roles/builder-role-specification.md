@@ -60,6 +60,8 @@ The assignment must also identify an operating command:
 * Publish
 * Implement
 
+Publish and Implement are the only authority-bearing Builder commands. Merge, correction, investigation, document creation, and similar terms describe completion-record patterns — the kind of evidence a record documents — and do not independently grant authority. Such work is performed under Publish or Implement authority, most commonly Implement.
+
 The Builder must determine which command applies before making changes.
 
 If the assignment does not clearly authorize either mode, the Builder must not infer implementation authority.
@@ -267,7 +269,7 @@ A tool operation is not successful merely because the environment appears to sup
 
 ## Reporting Contract
 
-Every Builder assignment should report, as applicable:
+Detailed evidence belongs in the Builder completion record, governed by `protocols/builder-completion-record-specification.md`. The completion record should contain, as applicable:
 
 * active command: Publish or Implement;
 * repository or working environment;
@@ -286,7 +288,13 @@ Every Builder assignment should report, as applicable:
 * blockers;
 * non-blocking findings.
 
-The report must distinguish verified facts from interpretation.
+The Builder's conversational output is a concise completion notice, not a restatement of the completion record. The completion notice should contain:
+
+* completion status;
+* the completion-record location;
+* any material blocker or limitation.
+
+The completion record must distinguish verified facts from interpretation.
 
 ## Completion Standard
 
